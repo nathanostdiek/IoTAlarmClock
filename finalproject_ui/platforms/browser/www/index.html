@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="en">
+    <meta name="author" content="Nathan Ostdiek">
+    <meta name="description" content="Final Project - CSE222">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Final Project</title>
+  </head>
+  <body>
+    <!-- LOGIN PAGE -->
+    <div id="loginpage">
+      <div class="rowheader">
+        <h1>Alarm Clock</h1>
+        <!-- Clock Gif from online -->
+        <img src="http://bestanimations.com/HomeOffice/Clocks/clock-animated-gif-10.gif#.Xdwpck5zfsI.link" alt="clock gif" id="clockgif" width="150px" height="150px">
+      </div>
+
+      <!-- Center Log -->
+      <div class="centerlog" id="login">
+        <h2>Login Page</h2>
+        <input type="text" name="username" placeholder="Username"> <br>
+        <input type="text" name="password" placeholder="Password"> <br>
+        <a href="#" class="forgotusername">Forgot Username/Password</a>
+        <button type="submit" name="signin" id="signin" class = "button" >Log In</button>
+        <button type="button" name="createaccount" id="user_create_account" class = "button">Create New Account</button>
+      </div>
+    </div>
+
+    <!-- CREATE NEW ACCOUNT PAGE -->
+    <div id="create_account_page">
+      <div class="rowheader">
+        <h1>Alarm Clock</h1>
+        <!-- Clock Gif from online -->
+        <img src="http://bestanimations.com/HomeOffice/Clocks/clock-animated-gif-10.gif#.Xdwpck5zfsI.link" alt="clock gif" id="clockgif" width="150px" height="150px">
+      </div>
+
+      <!-- Center Log -->
+      <div class="centerlog" id="newaccount">
+        <h2>Create New Account</h2>
+        <input type="text" name="newusername" value="" placeholder="New Username">
+        <input type="text" name="newpassword" value="" placeholder="New Password">
+        <input type="text" name="confirmpassword" value="" placeholder="Confirm Password">
+        <input type="text" name="newdeviceID" value="" placeholder="Device Id">
+        <button type="button" name="signin" id="createdaccount" class = "button">Create Account</button>
+        <button type="button" name="accountcreated" id="gotologin" class = "button">Go Back to Login Page</button>
+      </div>
+    </div>
+
+    <div id="topofeverypage">
+      <!-- Top Header of Page  -->
+        <div class="rowheader">
+          <h1>Alarm Clock</h1>
+          <!-- Clock Gif from online -->
+          <img src="http://bestanimations.com/HomeOffice/Clocks/clock-animated-gif-10.gif#.Xdwpck5zfsI.link" alt="clock gif" id="clockgif" width="150px" height="150px">
+        </div>
+          <button type="submit" name="submit" id="logoutuser">Log Out</button>
+
+          <!-- Buttons to switch between Control Pages -->
+          <div class="settingsbar">
+            <button type="button" class="controlpanel" name="controls" id="controlspagebutton">Controls</button>
+            <button type="button" class="controlpanel" name="advanced" id="advancedcontrolsbutton">Feature SetUp</button>
+            <button type="button" class="controlpanel" name="nighttime" id="nighttimecontrolsbutton">Night Time</button>
+          </div>
+    </div>
+
+    <div id="controlpage">
+          <div class="feature1">
+            <a class="status">Alarm Clock</a>
+            <input class="timef" id="timef"type="time" name="" value=""></input>
+            <input type="checkbox" class="checkbox" id="alarm_enabled"value=""></input>
+          </div>
+          <div class="feature1">
+              <a class="status">Lights Auto-On</a>
+              <input class="checkbox" type="checkbox" id="lightauto" name="checkbox"></input>
+          </div>
+
+    </div>
+
+    <div id="advanced_controls_page">
+          <!-- List of Feature for this Page -->
+            <div class="feature1">
+                <a class="status">Lights</a>
+                <input type="text" name="text" id="light_input" placeholder="Device ID"></input>
+                <input type="submit" id="lightcheck"value="Submit"></input>
+            </div>
+            <div class="feature1">
+              <a class="status">Weather</a>
+              <input type="text" name="text" id="zipcode_weather" placeholder="Zip Code"></input>
+              <input type="submit" id="weathercheck"value="Submit"></input>
+            </div>
+
+    </div>
+
+    <div id="night_time_page">
+          <div class="feature1">
+            <a class="status">Sleep Hours You Want?</a>
+            <input type="text" id="sleepcalc" placeholder="Number of Hours">
+            <br>
+            <a class="show">Based on Alarm Set: </a>
+            <a class ="show" id="displaytimeforsleep">You should go to bed at </a>
+          </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="./js/clockApp.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./resources/particle/particle.min.js"></script>
+  </body>
+</html>

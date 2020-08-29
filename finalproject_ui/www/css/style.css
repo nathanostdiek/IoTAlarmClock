@@ -1,0 +1,142 @@
+
+html{
+  background-color: smokewhite;
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  font-size: 50px;
+}
+
+.centerlog {
+  background-color: white;
+  border: 2px solid lightblue;
+  border-radius: 4px;
+  align-self: center;
+  padding: 10px;
+  display: inline-block;
+  width: 60%;
+}
+
+.rowheader {
+  width: 90%;
+  align-self: center;
+  display: inline-block;
+
+}
+
+#logoutuser, #logoutuser2{
+  font-size: 30px;
+  height: 80px;
+  color: darkslategrey;
+  background: lightblue;
+  width: 50%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+}
+.columnheader {
+  float: left;
+  width: 83%;
+}
+#clockgif{
+  margin-top: -35px;
+  margin-bottom: -15px;
+}
+
+h2 {
+  color: darkslategrey;
+  font-size: 30px;
+}
+h3{
+  font-size: 16px;
+}
+.forgotusername {
+  font-size: 18px;
+}
+
+input{
+  margin: 10px;
+  width: 40%;
+  height: 60px;
+  border: 2px solid black;
+  font-size: 20px;
+}
+.button {
+  font-size: 25px;
+  height: 70px;
+  color: darkslategrey;
+  background: lightblue;
+  width: 80%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.controlpanel {
+  width: 25%;
+  background-color: lightblue;
+  font-size: 20px;
+  color: darkslategrey;
+  margin-bottom: 16px;
+}
+
+.feature1{
+  align-items: center;
+  display: block;
+  margin-top: 10px;
+}
+input.checkbox {
+  cursor: pointer;
+}
+
+.status {
+  color: darkslategrey;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.checkbox {
+  width: 43px;
+  height: 43px;
+  position: relative;
+  left: 20px;
+  top: 5px;
+
+}
+.timef{
+  position: relative;
+  left: 10px;
+  bottom: 11px;
+  height: 40px;
+  width: 150px;
+}
+
+.show {
+  font-size: 32px;
+}
+#weathercheck, #lightcheck {
+  width: 200px;
+  height: 66px;
+  position: relative;
+  left: 6px;
+  top: 0px;
+  background-color: lightblue;
+  color: darkslategrey;
+}
+
+.settingsbar button {
+  width: 17%;
+  margin-bottom: 30px;
+  height: 80px;
+  font-size: 30px;
+}
+
+#controlpage, #advanced_controls_page, #night_time_page {
+  border: 8px solid lightblue;
+  border-radius: 20px;
+  width: 65%;
+  margin: auto;
+}
